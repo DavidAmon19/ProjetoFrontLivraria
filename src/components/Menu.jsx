@@ -1,21 +1,21 @@
-import { useNavigate } from "react-router-dom";
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import styles from './Menu.module.css';
+
 
 const Menu = () => {
   const navigate = useNavigate();
 
   return (
-    <header>
-      <div>
-        <img src="/logo.png" alt="Logo da livraria" />
+    <header className={styles.menu}>
+      <div className={styles.logo}>
       </div>
-
-      <div>
+      <div className={styles.searchBar}>
         <input type="text" placeholder="Pesquisar livros..." />
       </div>
-
-      <div>
-        <button onClick={() => navigate("/emprestimos")}>Emprestimos</button>
-        <button onClick={() => navigate("/perfil")}>Pefil</button>
+      <div className={styles.menuButtons}>
+        <button onClick={() => navigate('/emprestimos')}>Empréstimos</button>
+        <button onClick={() => navigate('/perfil')}>Perfil</button>
       </div>
     </header>
   );
