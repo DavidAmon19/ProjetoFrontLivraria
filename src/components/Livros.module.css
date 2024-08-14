@@ -1,0 +1,79 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  
+  .carrossel {
+    width: 60%; /* Aumenta o espaço do carrossel */
+  }
+  
+  .slick-prev, .slick-next {
+    color: #333; /* Cor das setas */
+    font-size: 2em;
+    z-index: 1;
+  }
+  
+  .slick-dots li button:before {
+    color: #333; /* Cor dos indicadores de página */
+  }
+  
+  .livroImg {
+    width: 100%;
+    height: 400px;
+    padding: 0.3rem;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+  
+  .detalhes {
+    width: 35%; /* Ajusta o tamanho da seção de detalhes */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .detalhes h2 {
+    margin: 0 0 10px 0;
+  }
+  
+  .detalhesImg {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #777;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .carrossel, .detalhes {
+      width: 100%;
+    }
+  
+    .detalhesImg {
+      width: 100%;
+    }
+  }
+  

@@ -1,0 +1,49 @@
+/* global.css */
+
+/* Reset de margens, preenchimentos e box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Definir altura e largura de 100% para body e html */
+  html, body {
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    background: #777777; /* Adiciona o fundo gradiente */
+    color: #fff; /* Define a cor do texto como branco para contrastar com o fundo escuro */
+  }
+  
+  /* Estilo básico para links */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Estilo básico para listas */
+  ul {
+    list-style-type: none;
+  }
+  
+  /* Estilo para botões */
+  button {
+    cursor: pointer;
+    border: none;
+    background-color: inherit;
+    padding: 0;
+    font: inherit;
+  }
+  
+  /* Remover bordas de elementos input e button em foco */
+  input, button {
+    outline: none;
+  }
+  
+  /* Configuração básica para imagens */
+  img {
+    max-width: 100%;
+    display: block;
+  }
+  
